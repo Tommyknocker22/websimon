@@ -1,0 +1,768 @@
+ @import url('https://fonts.googleapis.com/css?family=Karla');
+ 
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+
+/*General Configuration */
+
+body {
+     font-family: 'Karla', sans-serif;
+    background-color: black;
+    overflow-x:hidden;
+    }
+
+.wrapperMenu {
+    width: 65vw; ;
+    height: 100% ;
+    margin: 0 auto ;
+    }
+
+.wrapper {
+    width: 90vw; ;
+    height: 100% ;
+    margin: 0 auto ;
+    }
+
+.whiteLogoMenu {
+    width:100px;
+    position:fixed;
+    left:5vw;
+    top:8px;
+    z-index: 99999;
+    }
+
+.welcome {
+    background-image: url(ui-img/simon-gus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vw;
+    padding-bottom:7%;
+    z-index:9999;  
+    }
+
+.welcomeSubSection {
+    padding-top:50%;
+    }
+
+.bandWelcome {
+    height: 2em;
+    font-size: 5vw;
+    color:whitesmoke;
+    font-weight: 800;
+    letter-spacing: -1px;
+    }
+
+footer {
+    background-color: black;
+    width:100%;
+    height:150px;
+    z-index:1;
+    }
+
+.social-media {
+    position:relative;
+    left:40%;
+    }
+
+footer h3 {
+    position:relative;
+    left:2%;
+    margin-top: 25px;
+    color:white;
+    font-size: 3vw;
+    }
+
+.social-media-p svg {
+    fill:white;
+    width:15vw;
+    height:15vw;
+    }
+
+.goUp {
+    position:fixed;
+    top:85%;
+    right:10%;
+    width:7vw;
+    text-decoration:none;
+    fill:white;
+    z-index:99999;
+    display:none;
+    }
+
+.goUp:hover {
+    animation: startPoint 1s infinite;   
+    }
+
+@keyframes startPoint {
+    0% {
+        top:85%;        
+    }
+    
+    100% {
+        top:80%;        
+    }
+}
+
+.goUpOn {
+    opacity:1;
+    top:85%;
+    right:10%;
+    width:7vw;
+    text-decoration:none;
+    fill:white;
+    z-index:99999;
+    cursor:pointer;
+    display:block;
+    }
+
+#start {
+    position:absolute;
+    top:0%;
+    }
+
+
+
+
+
+
+
+/*Homepage*/
+
+.whiteLogo {
+    position:absolute;
+    top:25%;
+    left:27%;
+    width: 50vw;
+    opacity:20%;
+    z-index: -1;
+    }
+
+.purgatoryCover {
+    width:100%;
+    opacity: 0.7;
+    }
+
+.purgatoryCoverFullColor{
+    width:100%;
+    opacity: 1;
+    }
+
+.title {
+    position:relative;
+    top:5%;
+    height: 2em;
+    font-size: 5vw;
+    color:whitesmoke;
+    font-weight: 800;
+    letter-spacing: -1px;    
+    }
+
+.btn-music {
+    width:100%;
+    display:inline-block;
+    margin-top: 0.3em;
+    background-color: darkslategray;
+    z-index:1;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    text-decoration: none;
+    padding:3vw 0vw;
+    }
+
+.btn-music:hover {
+    background-color:green;
+    }
+
+.btn-music:active {
+		background-color:forestgreen;
+		}
+
+.ico {
+    display:inline-block;
+    z-index: 1;
+    width:5vw;
+    height:5vw;
+    position:relative;
+    vertical-align: middle;
+    margin-left:0.5rem;
+    padding-right: 0;
+    }
+
+.welcome blockquote {
+
+    margin-top:5%;
+    color:white;
+    font-size: 3vw;
+    font-style: italic;
+    background-color:rgba(0,0,0,0.5);
+    padding:5% 10% 10%;
+    line-height: 4vw;  
+    }
+
+
+.welcome blockquote::before {
+    content:"“";
+    position:relative;
+    left:-5%;
+    font-size:10vw;
+    }
+
+
+
+
+
+
+
+/*Music*/
+
+.heroDisco {
+  background-image: url(ui-img/discography-simon-del-desierto-julio-guitar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:120vw;
+    z-index:9999;  
+    }
+
+.subSectionMusic {
+    padding-top:10%;
+    }
+
+.subSectionContact {
+    padding-top:35%;
+    }
+
+.subSectionVideo {
+    padding-top:10%;
+    padding-bottom:5%;
+    }
+
+.contentMenu {
+    position:absolute;
+    top:200px;
+    left:-7%;
+    animation: mvtomenu 2s forwards;
+    }
+
+@keyframes mvtomenu {
+    0% {
+        top:200px;
+        left:-25%        
+    }
+    
+    100% {
+        top:200px;
+        left:2%;
+    }
+    
+}
+
+.contentMenu a {
+    background-color: darkslategray;
+    color: white;
+    display:inline-block;
+    width: 20vw; 
+    font-size: 4vw;
+    text-decoration: none;
+    margin-top:1vh;
+    text-align: center;
+    padding: 1.5vh 2vw;
+    }
+
+.contentMenu a:hover {
+    background-color:green;
+    color: white;
+    }
+
+.contentMenu a:active {
+    background-color:forestgreen;
+    }
+
+.releasesSection {
+    background-color: black;
+    }
+
+
+/*Music - iframes Bandcamp*/
+
+.iframesMusic {
+    margin: 0 auto ;
+    }
+
+.iframesMusic div {
+	margin-bottom: 2% ;
+    }
+
+@media (max-width: 49em) {
+	.iframesMusic {
+		display:block;
+		}
+	
+	.iframesMusic div {
+		width: 100% ;
+	}
+	
+}
+
+
+@media (min-width: 50em) {
+	.iframesMusic {
+		display: flex ;
+		flex-wrap: wrap ;
+		justify-content: space-between ;
+		}
+	
+	.iframesMusic div {
+		width: 49% ;
+	}
+	
+}
+
+
+/*Music - iframes Youtube*/
+
+.videosSection {
+    background-color: #382a23 ;  
+    }
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container {
+	margin-bottom: 5vh;
+}
+
+.video-container iframe {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/*Music - Credits*/
+
+.credits {
+    color:white;
+    font-family: Karla;
+    font-size: 3vw;
+    line-height:4vw;
+    background-color:rgba(0,0,0,0.5);
+    padding: 4vw; 
+    }
+
+.credits h4{
+    margin-top:2vw;
+    font-size: 4vw;
+    font-weight: bold;
+    }
+
+
+
+
+
+
+
+/*About Us*/
+
+.heroAboutUs {
+   background-image: url(ui-img/simon-del-desierto-barcelona-about-us.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height:120vw; 
+    }
+
+.aboutMain {
+   background-image:url(ui-img/simon-del-desierto-javi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:150vw;  
+    }
+
+.history {
+    columns: 2 ;
+    color:white;
+    font-family: Karla;
+    font-size: 2.5vw;
+    line-height: 2.7vw; 
+    background-color:rgba(0,0,0,0.5);
+    padding:2vw 2vw;
+    }
+
+.imgHistory {
+    display:block;
+    width:65vw;
+    margin: 4vw 0vw;
+    }
+
+.faq{
+    color:lightgrey;
+    font-family: Karla;
+    font-size: 2.5vw;
+    line-height:4vw;
+    background-color:rgba(0,0,0,0.5);
+    padding: 4vw;
+    }
+
+.faq h4{
+    margin-top:2vw;
+    font-size: 3vw;
+    font-weight: bold;
+    color:lightyellow;
+    }
+
+.theGallery {
+	padding: 4% ;
+    }
+
+.theGallery div {
+	margin-bottom: 2% ;
+    }
+
+.theGallery img {
+	max-width: 100% ;
+	display: block ;
+    transition: all .4s ;
+	}
+
+.theGallery h2 {
+    position:relative;
+    left:0;
+    top:-40px;
+    font-size:1.5rem;
+    color:white;
+    background-color:rgba(0,0,0,0.5);
+    display: inline-block;
+    padding:5px 10px;
+    }
+
+@media (min-width: 990px) {
+
+.galeria {
+		display: flex ;
+		flex-wrap: wrap ;
+		justify-content: space-between ;
+		}
+	
+.galeria div {
+		width: 32% ;
+	   }
+	
+.galeria div:last-child {
+		width: 100% ;
+	   }
+}
+
+.aboutGallery {
+        background-color:black; 
+        }
+
+
+
+
+
+/*Contact*/
+
+
+.email {
+    text-decoration: none;
+    color:white;
+    }
+
+.email a:hover {
+    text-decoration: underline;
+    }
+
+
+
+
+
+
+
+
+/*Mobile and Tablet*/
+
+
+/*All pages*/
+
+@media (max-width:990px) {
+    
+.wrapperMenu {
+    width: 100%; ;
+    height: 100% ;
+    margin: 0 auto ;
+    }  
+    
+.wrapper {
+    width: 90vw; ;
+    height: 100% ;
+    margin: 0 auto ;
+    }
+    
+   
+.mainNav .wrapper {
+    width:100%;
+    }
+    .mainNavEscondida {
+        
+    display:none;    
+        
+    }       
+#menuchk {
+    position:absolute;
+    right:0%;
+    display:none;
+    }
+    
+.menubtn { 
+    width: 70px;
+    height: 70px;
+    position:absolute;
+    line-height: 100px;
+    right:50px;
+    top:50px;
+    z-index:999;
+    }
+       
+.menubtn:hover {
+    cursor: pointer;
+    }   
+     
+.menubtn div{   
+    width: 60px;
+    height: 8px;
+    background-color: white;
+    margin-top: 15%;
+    transition: all 1s;
+    }
+ 
+#menuchk:checked~.menubtn div {
+    opacity:0;
+    }     
+    
+#closeMenu {
+    width:70px;    
+    position:absolute;    
+    top:50px; 
+    z-index:2;
+    right:50px;
+    opacity:0;
+    transition: all 1s;
+    display:none;
+    }    
+
+#menuchk:checked~#closeMenu {
+    display:block;
+    opacity:1;
+    }    
+
+.whiteLogoMenu {
+    width:150px;
+    position:absolute;
+    left:5vw;
+    top:8px;
+    z-index: 99999;
+    }        
+    
+.mainNav {
+    width:100%;
+    height:25% ;
+    position:absolute;
+    top:120px ;
+    z-index:1;
+    }
+ 
+    
+.mainNav a { 
+    color: white;
+    font-size: 3rem; 
+    text-decoration: none;
+    line-height: 50px;
+    width:100%;
+    height: 15vh;;
+    background-color: darkslategray;
+    display: inline-block;
+    opacity:0;
+    text-align:center;
+    padding-top:10vh;
+    border-bottom: solid 2px white;
+/*    cursor:default;*/
+    transition: opacity 1.5s;
+    display:none
+    } 
+ 
+.mainNav li:last-child a {
+    border-bottom:none;
+    
+    }     
+    
+.mainNav a:hover {
+    color: white;
+    background-color:black;
+    }
+    
+.mainNav a:active {
+		background-color:forestgreen;
+		}
+    
+#menuchk:checked~.mainNav a {
+    opacity:1;
+    cursor:pointer;
+    display:block;
+    }
+    
+#menuchk:checked~.mainNav {
+    z-index:99999;
+    }
+ 
+.whiteLogo {
+    position:absolute;
+    top:10%;
+    left:27%;
+    width: 50vw;
+    opacity:20%;
+    z-index: -1;
+    }   
+    
+.bandWelcome {
+    
+    font-size: 5vw;
+    color:whitesmoke;
+    font-weight: 800;
+    letter-spacing: -1px;
+    }    
+
+ .goUp {
+    width:7vw;
+    }   
+    
+    
+    
+/* Music Mobile*/
+    
+.contentMenu {
+    z-index: 2;
+    } 
+    
+    
+/* Contact Mobile */  
+    
+    .subSectionContact {
+    padding-top:35%;
+    }
+
+ }
+    
+    
+    
+    
+    
+/*Big screen*/
+
+/*All pages*/
+
+@media (min-width:991px) {
+
+input {
+    display:none; 
+    }
+    
+#closeMenu {
+    display:none;
+    }
+    
+.mainNav ul {
+    display:flex;
+    justify-content: space-around;
+    }
+   
+.wrapper {
+    width: 90vw; ;
+    height: 100% ;
+    margin: 0 auto ;
+    }
+    
+.mainNav {
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 2;
+    transition: opacity 0.5s;
+    }
+    
+    .mainNavScroll {
+    background-color: rgba(0,0,0,0.5);  
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 2;
+    transition: opacity 0.5s;
+    }
+    
+.mainNav li {      
+    justify-content: space-around;
+    padding-top: 1.5em;
+    }
+    
+.mainNav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    position:relative;
+    }
+    
+.mainNav a:hover {
+    color: white;
+    }
+
+.mainNav a:hover::before {
+    content:"((";
+    position:absolute;
+    left:-2rem;
+    }
+
+
+.mainNav a:hover::after{
+    content:"))";
+    position:absolute;
+    right:-2rem;;
+    }
+
+.current:hover {
+    color:yellow;      
+    }
+   
+.goUp {
+    position:fixed;
+    top:85%;
+    right:10%;
+    width:70px;
+    text-decoration:none;
+    fill:white;
+    z-index:99999;
+    }
+           
+}
+
+
+
+
+
+
+
